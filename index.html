@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#101b14"><title>Jungle Rush 3D — Cinematic Edition</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+</head>
+<body><main id="game">
+<div class="topbar"><div class="logo">JUNGLE <span>RUSH</span><small>CINEMATIC EDITION</small></div><div class="meters"><div class="meter"><small>DISTANCE</small><strong id="score">00000</strong></div><div class="meter"><small>COINS</small><strong id="coins">0 <i>◆</i></strong></div></div></div>
+<div class="quality"><label for="quality">QUALITY</label><select id="quality"><option value="auto">Auto</option><option value="high">High</option><option value="mobile">Mobile</option></select></div>
+<section id="start-screen" class="screen"><div class="panel"><div class="kicker">THE RUINS ARE CALLING</div><h1>JUNGLE<br><span>RUSH</span></h1><p>Race through forgotten temples. Dodge the ruins. Take the gold.</p><div class="controls-grid"><div><b>← →</b><span>Change lane</span></div><div><b>↑ / SPACE</b><span>Jump</span></div><div><b>↓</b><span>Slide</span></div><div><b>SWIPE</b><span>Touch controls</span></div></div><button id="start-btn">ENTER THE JUNGLE ↗</button><small class="note">Use landscape mode on phones for the best view</small></div></section>
+<section id="gameover-screen" class="screen hidden"><div class="panel"><div class="kicker">THE JUNGLE CLAIMS ANOTHER</div><h2>RUN <span>OVER</span></h2><div class="result-row"><span>Distance</span><strong id="final-score">0</strong></div><div class="result-row"><span>Coins collected</span><strong id="final-coins">0</strong></div><button id="restart-btn">RUN AGAIN ↻</button></div></section>
+<div class="mobile-controls"><button id="left-btn">◀</button><div class="vertical-buttons"><button id="jump-btn">▲</button><button id="slide-btn">▼</button></div><button id="right-btn">▶</button></div><div class="bottom-hint">SWIPE TO MOVE <span>•</span> DODGE THE RUINS</div><div id="asset-status">Loading 3D world…</div>
+</main><script type="module" src="game.js"></script></body></html>
